@@ -9,21 +9,26 @@ import { Route, Routes } from "react-router-dom";
 //import Inicio from "./Components/pages/Inicio";
 
 
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
 
+//import Navbar_admin from "./Components/pages/pages_edgar/Navbar_admin";
 //import Generalidades from "./Components/pages/Generalidades";
 import Inicio from "./Components/pages/Inicio";
+
+import Login from "./Components/pages/pages_edgar/Login";
 function App() {
   return (
     <main>
       <React.Fragment>
-        <Navbar></Navbar>
+       
+        {/**  <Navbar></Navbar>   */}
         <Routes>
           
         <Route path="/Inicio" element={<Inicio />}></Route>
+        <Route path="/admin" element={<Login/>}></Route>
+        
         </Routes>
-        <Footer></Footer>
+      {/**  <Footer></Footer> */}
+       
       </React.Fragment>
     </main>
     

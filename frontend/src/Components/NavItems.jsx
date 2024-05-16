@@ -20,4 +20,5 @@ export const navItems = [
         path: "/Preguntas",
         cName: "nav-item",
       },
-];
+]
+;
